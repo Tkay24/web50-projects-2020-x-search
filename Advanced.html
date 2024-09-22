@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        form {
+            text-align: left;
+            display: inline-block;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #d3d3d3;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4285F4;
+            color: white;
+            cursor: pointer;
+        }
+        .link-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .link-container a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #4285F4;
+        }
+    </style>
+</head>
+<body>
+    <div class="link-container">
+        <a href="index.html">Google Search</a>
+        <a href="image.html">Image Search</a>
+    </div>
+
+    <form action="https://www.google.com/search" method="GET">
+        <label>All these words:</label>
+        <input type="text" name="as_q">
+
+        <label>This exact word or phrase:</label>
+        <input type="text" name="as_epq">
+
+        <label>Any of these words:</label>
+        <input type="text" name="as_oq">
+
+        <label>None of these words:</label>
+        <input type="text" name="as_eq">
+
+        <br>
+        <input type="submit" value="Advanced Search">
+    </form>
+</body>
+</html>
